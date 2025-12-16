@@ -2470,7 +2470,7 @@ collection:
         meta:
           id: req_0991650170784bd3b44febc0877a3ec4
           created: 1760408540540
-          modified: 1765759666221
+          modified: 1765925150256
           isPrivate: false
           description: ""
           sortKey: -1732073886230
@@ -2498,21 +2498,21 @@ collection:
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/09359502000122/21/DTE_01",
-                  "processType": "Smelting & Refining",
+                  "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/09359502000135/21/DTE_01",
+                  "processType": "Precipitation",
                   "eventTime": "2024-11-12T12:00:00",
                   "action": "add",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
                   "bizStep": "https://ref.gs1.org/cbv/BizStep-commissioning",
-                  "bizLocation": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/8787870000006?linkType=gs1:locationInfo",
+                  "bizLocation": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/4569870000016",
                   "sensorElementList": [],
                   "outputEPCList": [
                     {
                       "type": [
                         "Item"
                       ],
-                      "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/18787870000008/21/DPP_01?linkType=gs1:sustainabilityInfo",
-                      "name": "Copper Cathode - NMC - N"
+                      "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/14569870000031/21/DPP_01?linkType=gs1:sustainabilityInfo",
+                      "name": "Lithium Carbonate - LBM - CR"
                     }
                   ],
                   "inputEPCList": [
@@ -2520,15 +2520,8 @@ collection:
                       "type": [
                         "Item"
                       ],
-                      "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/19129870000037/21/DPP_01?linkType=gs1:sustainabilityInfo",
-                      "name": "Copper Concentrate - BC Copper - BC"
-                    },
-                    {
-                      "type": [
-                        "Item"
-                      ],
-                      "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/86753090000022/21/DPP_01?linkType=gs1:sustainabilityInfo",
-                      "name": "Recycled Copper Concentrate - RMG - Location PA"
+                      "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/14569870000017/21/DPP_01?linkType=gs1:sustainabilityInfo",
+                      "name": "Lithium Chloride - LBM - CM"
                     }
                   ],
                   "inputQuantityList": [],
@@ -2638,7 +2631,7 @@ collection:
         meta:
           id: req_f82b27f6cb9b4a7ea7f597f9c3a31444
           created: 1760408540561
-          modified: 1765498268816
+          modified: 1765925190890
           isPrivate: false
           description: ""
           sortKey: -1732073885930
