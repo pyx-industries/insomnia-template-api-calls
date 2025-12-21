@@ -15047,3 +15047,26 @@ environments:
           until</div> <div class=\\\"grid-value\\\"> <div
           class=\\\"grid-value-text-alt\\\">{{validUntil}}</div> </div> </div>
           {{/if}} </div> </section> </div> </body></html>{% endraw %}"
+    - name: environment-template
+      meta:
+        id: env_dcddae599d0048a9a5b3a5e8c73046fe
+        created: 1766356407812
+        modified: 1766356565643
+        isPrivate: false
+        sortKey: 1734285843701.75
+      data:
+        base: .<PYX-ENV_CLIENT_NAME found in .env lastpass>.pyx.io
+        did: vckit{{ _.base }}
+        api_url: https://vckit{{ _.base }}
+        api_token: <VCKIT_API_KEY found in.env lastpass>
+        storage_url: https://vcs{{ _.base }}
+        storage_token: test123
+        idr_url: https://idr{{ _.base }}
+        idr_token: <IDR_API_KEY found in .env lastpass>
+        gs1_url: https://mock-gs1-idr{{ _.base }}
+        gs1_token: <GS1_API_KEY> found in .env lastpass
+        app_url: https://www{{ _.base }}
+        dccVCTemplate: ""
+        dppVCTemplate: ""
+        dteVCTemplate: ""
+        dfrVCTemplate: ""
