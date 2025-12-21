@@ -19,7 +19,7 @@ Follow the steps below to clone the repository in Insomnia:
 5. Create a development branch using the naming format <username>-dev-001, incrementing the number with each new branch.
 6. Insomnia will automatically detect any modifications and display them in the bottom-left corner.
 8. After completing your updates, commit and push the changes to your development branch in the remote repository.
-9. Once you’re satisfied with the committed changes, raise a pull request to merge into the master branch.
+9. Once you’re satisfied with the committed changes, raise a pull request and assign a reviewer for peer review, then request a merge into the master branch.
 
 ## Issuing credentials
 1. Select the environment accordingly at the top left corner based on the render templates.
