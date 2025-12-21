@@ -54,7 +54,7 @@ collection:
         meta:
           id: req_dd5bc13e96844dc3ad131303459a851b
           created: 1759897101084
-          modified: 1765755429594
+          modified: 1766122409339
           isPrivate: false
           description: ""
           sortKey: -1732073886230
@@ -76,262 +76,264 @@ collection:
             			"id": "did:web:{{ _.did }}",
             			"name": "RBA"
             		},
-            		"credentialSubject": {
-            				"type": [
-            					"ProductPassport"
-            				],
-            				"id": "09359502000034/21/DPP_01",
-            				"product": {
-            					"type": [
-            						"Product"
-            					],
-            					"id": "09359502000034/21/DPP_01",
-            					"name": "Copper Ore",
-            					"registeredId": "09359502000034/21/DPP_01",
-            					"idScheme": {
-            						"type": [
-            							"IdentifierScheme"
-            						],
-            						"id": "https://id.gs1.org/01/",
-            						"name": "Global Trade Identification Number (GTIN)"
-            					},
-            					"batchNumber": 20241111,
-            					"productImage": {
-            						"linkURL": "https://img.freepik.com/free-psd/beautiful-stone-studio_23-2151860785.jpg",
-            						"linkName": "Copper Ore",
-            						"linkType": "https://vocabulary.uncefact.org/"
-            					},
-            					"description": "Copper Ore mined in a Copper Mine",
-            					"productCategory": [
-            						{
-            							"type": [
-            								"Classification"
-            							],
-            							"id": "https://unstats.un.org/unsd/classifications/Econ/cpc/14210",
-            							"code": 14210,
-            							"name": "Copper ores",
-            							"schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
-            							"schemeName": "UN Central Product Classification (CPC)"
-            						}
-            					],
-            					"producedByParty": {
-            						"id": "http://localhost:3000/gs1/01/414/9359502000034",
-            						"name": "Sample Company Pty Ltd.",
-            						"registeredId": "9359502000034"
-            					},
-            					"producedAtFacility": {
-            						"id": "http://localhost:3000/gs1/01/414/9359502000034",
-            						"name": "Sample Copper Mine",
-            						"registeredId": "9359502000034"
-            					},
-            					"productionDate": "2024-04-25",
-            					"countryOfProduction": "ID",
-            					"serialNumber": "12345678"
-            				},
-            				"granularityLevel": "item",
-            				"conformityClaim": [
-            					{
-            						"type": [
-            							"Claim",
-            							"Declaration"
-            						],
-            						"id": "https://products.example-company.com/09520123456788/declarations/12345",
-            						"description": "Copper Ore Mined at CopperMark Certified Facility",
-            						"referenceStandard": {
-            							"type": [
-            								"Standard"
-            							],
-            							"id": "https://coppermark.org/wp-content/uploads/2023/10/RRA-v3.0-Criteria-Guide_2023.pdf",
-            							"name": "RISK READINESS ASSESSMENT CRITERIA GUIDE",
-            							"issuingParty": {
-            								"id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
-            								"name": "The Copper Mark",
-            								"registeredId": "12370476"
-            							},
-            							"issueDate": "2023-12-05"
-            						},
-            						"assessmentCriteria": [
-            							{
-            								"type": [
-            									"Criterion"
-            								],
-            								"id": "https://coppermark.org/wp-content/uploads/2023/10/RRA-v3.0-Criteria-Guide_2023.pdf",
-            								"name": "RISK READINESS ASSESSMENT CRITERIA GUIDE",
-            								"description": null,
-            								"conformityTopic": "governance.compliance",
-            								"status": "active",
-            								"subCriterion": [],
-            								"performanceLevel": null,
-            								"tags": null
-            							}
-            						],
-            						"assessmentDate": "2024-03-15",
-            						"conformance": true,
-            						"conformityTopic": "governance.compliance",
-            						"conformityEvidence": {
-            							"linkURL": "http://localhost:3000/gs1/01/09359502000034/21/DCC_01?linkType=gs1:certificationInfo",
-            							"linkName": "Copper Concentrate Produced at CopperMark Certified Facility",
-            							"linkType": "https://vocabulary.uncefact.org/",
-            							"hashDigest": 6239119,
-            							"hashMethod": "SHA-256",
-            							"encryptionMethod": "AES"
-            						}
-            					},
-            					{
-            						"type": [
-            							"Claim",
-            							"Declaration"
-            						],
-            						"id": "https://mining.ca/wp-content/uploads/dlm_uploads/2024/05/FINAL-2020-Protocol-Biodiversity.pdf",
-            						"description": "Copper Ore Mined at TSM Certified Facility",
-            						"referenceStandard": {
-            							"type": [
-            								"Standard"
-            							],
-            							"id": "https://mining.ca/wp-content/uploads/dlm_uploads/2024/05/FINAL-2020-Protocol-Biodiversity.pdf",
-            							"name": "Towards Sustainable Mining Protocol",
-            							"issuingParty": {
-            								"id": "https://lobbycanada.gc.ca/app/secure/ocl/lrs/do/vwRg?cno=12699&regId=491370",
-            								"name": "SAMPLE TEST: Mining Association of Canada",
-            								"registeredId": "779221-12699"
-            							},
-            							"issueDate": "2023-12-05"
-            						},
-            						"assessmentCriteria": [
-            							{
-            								"type": [
-            									"Criterion"
-            								],
-            								"id": "https://mining.ca/wp-content/uploads/dlm_uploads/2024/05/FINAL-2020-Protocol-Biodiversity.pdf",
-            								"name": "Towards Sustainable Mining Protocol",
-            								"description": null,
-            								"conformityTopic": "governance.compliance",
-            								"status": "active",
-            								"subCriterion": [],
-            								"performanceLevel": null,
-            								"tags": null
-            							}
-            						],
-            						"assessmentDate": "2024-03-15",
-            						"conformance": true,
-            						"conformityTopic": "governance.compliance",
-            						"conformityEvidence": {
-            							"linkURL": "http://localhost:3000/gs1/01/09359502000034/21/DCC_02?linkType=gs1:certificationInfo",
-            							"linkName": "Copper Ore Mined at Towards Sustainable Mining (TSM) Certified Facility",
-            							"linkType": "https://vocabulary.uncefact.org/",
-            							"hashDigest": 6239119,
-            							"hashMethod": "SHA-256",
-            							"encryptionMethod": "AES"
-            						}
-            					},
-            					{
-            						"type": [
-            							"Claim",
-            							"Declaration"
-            						],
-            						"id": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96293_01",
-            						"description": "Copper Ore Mined at Mines Act Permit Certified Facility",
-            						"referenceRegulation": {
-            							"type": [
-            								"Regulation"
-            							],
-            							"id": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96293_01",
-            							"name": "Mines Act",
-            							"jurisdictionCountry": "CA",
-            							"administeredBy": {
-            								"id": "https://gov.bc.ca",
-            								"name": "Government of British Columbia"
-            							},
-            							"effectiveDate": "2024-11-26"
-            						},
-            						"assessmentCriteria": [
-            							{
-            								"type": [
-            									"Criterion"
-            								],
-            								"id": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96293_01",
-            								"name": "Mines Act Permit",
-            								"description": null,
-            								"conformityTopic": "governance.compliance",
-            								"status": "active",
-            								"subCriterion": [],
-            								"performanceLevel": null,
-            								"tags": null
-            							}
-            						],
-            						"assessmentDate": "2024-11-11",
-            						"conformance": true,
-            						"conformityTopic": "governance.compliance",
-            						"conformityEvidence": {
-            							"linkURL": "http://localhost:3000/gs1/01/09359502000034/21/DCC_03?linkType=gs1:certificationInfo",
-            							"linkName": "Copper Ore Mined at a Facility the holds an active Mines Permit",
-            							"linkType": "https://vocabulary.uncefact.org/",
-            							"hashDigest": 6239119,
-            							"hashMethod": "SHA-256",
-            							"encryptionMethod": "AES"
-            						}
-            					}
-            				],
-            				"emissionsScorecard": {
-            					"carbonFootprint": 2.5,
-            					"declaredUnit": "tCO2e per metric tonne of Copper Concentrate",
-            					"operationalScope": "CradleToGate",
-            					"primarySourcedRatio": 0.9,
-            					"reportingStandard": {
-            						"type": [
-            							"Standard"
-            						],
-            						"id": "https://www.iso.org/standard/71206.html",
-            						"name": "ISO 14067:2018 Greenhouse gases \\u2014 Carbon footprint of products \\u2014 Requirements and guidelines for quantification",
-            						"issuingParty": {
-            							"id": "https://id.gs1.org/01/09520123456788/21/12345",
-            							"name": "TEST Carbon Footprint-Certifier",
-            							"registeredId": 90664869327,
-            							"idScheme": {
-            								"type": [
-            									"IdentifierScheme"
-            								],
-            								"id": "https://id.gs1.org/01/",
-            								"name": "Global Trade Identification Number (GTIN)"
-            							}
-            						},
-            						"issueDate": "2023-12-05"
-            					}
-            				},
-            				"traceabilityInformation": [
-            					{
-            						"valueChainProcess": "Mining",
-            						"verifiedRatio": 0.5,
-            						"traceabilityEvent": [
-            							{
-            								"linkURL": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/09359502000034/21/DTE_01?linkType=gs1:traceability",
-            								"linkName": "Mining Copper Ore",
-            								"linkType": "https://vocabulary.uncefact.org/",
-            								"hashDigest": 6239119,
-            								"hashMethod": "SHA-256",
-            								"encryptionMethod": "AES"
-            							}
-            						]
-            					}
-            				],
-            				"circularityScorecard": {
-            					"recyclingInformation": {
-            						"linkURL": "https://files.example-certifier.com/1234567.json",
-            						"linkName": "GBA rule book conformity certificate",
-            						"linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
-            					},
-            					"repairInformation": {
-            						"linkURL": "https://files.example-certifier.com/1234567.json",
-            						"linkName": "GBA rule book conformity certificate",
-            						"linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
-            					},
-            					"recyclableContent": 0.5,
-            					"recycledContent": 0.3,
-            					"utilityFactor": 1.2,
-            					"materialCircularityIndicator": 0.67
-            				}
-            			},
-            		"credentialStatus": {% response 'raw', 'req_015db7f7d58140a2abb52f950819e948', '', 'always', 60 %},
+            		 "credentialSubject": {
+                "type": [
+                  "ProductPassport"
+                ],
+                "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/14569870000031",
+                "product": {
+                  "type": [
+                    "Product"
+                  ],
+                  "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/14569870000031",
+                  "name": "Lithium Carbonate - Battery Grade (Micronized)",
+                  "registeredId": "14569870000031",
+                  "idScheme": {
+                    "type": [
+                      "IdentifierScheme"
+                    ],
+                    "id": "https://id.gs1.org/01/",
+                    "name": "Global Trade Identification Number (GTIN)"
+                  },
+                  "batchNumber": "LBM-CR-20251027-001",
+                  "productImage": {
+                    "linkURL": "https://pulse.pyx.io/assets/img/shared/251106lithiumCarbonate.png",
+                    "linkName": "Lithium Carbonate Battery Grade Product Image",
+                    "linkType": "https://test.uncefact.org/vocabulary/linkTypes/productImage"
+                  },
+                  "description": "High-purity battery-grade lithium carbonate (Li2CO3) produced from brine using solar evaporation and purification processes. Micronized powder optimized for cathode precursor synthesis in lithium-ion battery manufacturing.\n\nBatch packaged in 25 kg polyethylene-lined multi-wall paper bags, 40 bags per heat-shrink wrapped pallet (1,000 kg net). Shipped as UN3077, Class 9, PG III (Environmentally hazardous substance, solid, n.o.s.) with marine pollutant marking for IMDG.",
+                  "productCategory": [
+                    {
+                      "type": [
+                        "Classification"
+                      ],
+                      "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/36130",
+                      "code": "36130",
+                      "name": "Lithium oxide and hydroxide",
+                      "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+                      "schemeName": "UN Central Product Classification (CPC)"
+                    },
+                    {
+                      "type": [
+                        "Classification"
+                      ],
+                      "id": "https://identifiers.org/cas:554-13-2",
+                      "code": "554-13-2",
+                      "name": "Lithium carbonate",
+                      "schemeID": "https://identifiers.org/cas/",
+                      "schemeName": "Chemical Abstracts Service Registry Number"
+                    },
+                    {
+                      "type": [
+                        "Classification"
+                      ],
+                      "id": "https://unece.org/trade/uncefact/unDangerousGoods/3077",
+                      "code": "UN3077",
+                      "name": "Environmentally hazardous substance, solid, n.o.s. (Lithium carbonate)",
+                      "schemeID": "https://unece.org/trade/uncefact/unDangerousGoods/",
+                      "schemeName": "UN Dangerous Goods Classification"
+                    }
+                  ],
+                  "furtherInformation": [
+                    {
+                      "linkURL": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                      "linkName": "LBM Lithium Carbonate Technical Documentation",
+                      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/productInfo"
+                    },
+                    {
+                      "linkURL": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                      "linkName": "Lithium Carbonate Safety Data Sheet",
+                      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/safetyInformation"
+                    }
+                  ],
+                  "producedByParty": {
+                    "type": [
+                      "Party"
+                    ],
+                    "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/4569870000016",
+                    "name": "LBM Corporation",
+                    "registeredId": "4569870000016",
+                    "idScheme": {
+                      "type": [
+                        "IdentifierScheme"
+                      ],
+                      "id": "https://id.gs1.org/414/",
+                      "name": "Global Location Number (GLN)"
+                    }
+                  },
+                  "producedAtFacility": {
+                    "type": [
+                      "Facility"
+                    ],
+                    "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/4569870000016",
+                    "name": "LBM Refinery - Location CR",
+                    "registeredId": "4569870000016",
+                    "idScheme": {
+                      "type": [
+                        "IdentifierScheme"
+                      ],
+                      "id": "https://id.gs1.org/414/",
+                      "name": "Global Location Number (GLN)"
+                    }
+                  },
+                  "productionDate": "2025-10-27",
+                  "countryOfProduction": "CL",
+                  "dimensions": {
+                    "weight": {
+                      "value": 1000,
+                      "unit": "KGM"
+                    }
+                  }
+                },
+                "granularityLevel": "batch",
+                "materialsProvenance": [
+                  {
+                    "name": "Lithium Brine",
+                    "originCountry": "CL",
+                    "materialType": {
+                      "type": [
+                        "Classification"
+                      ],
+                      "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/15000",
+                      "code": "15000",
+                      "name": "Natural water and other minerals",
+                      "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+                      "schemeName": "UN Central Product Classification (CPC)"
+                    },
+                    "massFraction": 100,
+                    "recycledMassFraction": 0
+                  }
+                ],
+                "conformityClaim": [
+                  {
+                    "type": [
+                      "Claim",
+                      "Declaration"
+                    ],
+                    "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/14569870000031/10/LBM-CR-20251027-001/claim/battery-grade-chemical",
+                    "description": "Battery-grade lithium carbonate chemical assay confirming purity ≥99.5% Li2CO3 with controlled impurity levels suitable for cathode precursor synthesis. Product meets YS/T 582-2023 specifications for battery-grade material with low transition metal content (Fe, Cu, Ni, Zn ≤6 ppm each), controlled Na, Ca, SO4, and Cl levels, and particle size distribution (D50 ≤6 µm) optimized for lithium-ion battery production.",
+                    "referenceStandard": {
+                      "type": [
+                        "Standard"
+                      ],
+                      "id": "https://www.chinesestandard.net/PDF.aspx/YST582-2023",
+                      "name": "YS/T 582-2023 - Battery-grade Lithium Carbonate",
+                      "issuingParty": {
+                        "type": [
+                          "Party"
+                        ],
+                        "id": "https://www.chinesestandard.net",
+                        "name": "Chinese Industry Standard"
+                      },
+                      "issueDate": "2023-01-01"
+                    },
+                    "assessmentCriteria": [
+                      {
+                        "type": [
+                          "Criterion"
+                        ],
+                        "id": "https://battery-grade-specs/purity",
+                        "name": "Lithium Carbonate Purity Minimum",
+                        "description": "Minimum purity requirement of ≥99.5% Li2CO3 for battery-grade lithium carbonate",
+                        "conformityTopic": "governance.compliance",
+                        "status": "active"
+                      },
+                      {
+                        "type": [
+                          "Criterion"
+                        ],
+                        "id": "https://battery-grade-specs/impurities",
+                        "name": "Transition Metal and Ionic Impurity Limits",
+                        "description": "Maximum allowable levels for transition metals (Fe, Cu, Ni, Zn) and ionic impurities (Na, Ca, SO4, Cl) in battery-grade material",
+                        "conformityTopic": "governance.compliance",
+                        "status": "active"
+                      },
+                      {
+                        "type": [
+                          "Criterion"
+                        ],
+                        "id": "https://battery-grade-specs/particle-size",
+                        "name": "Particle Size Distribution (D50/D99)",
+                        "description": "Particle size specifications with D50 ≤6 µm for optimal cathode precursor synthesis",
+                        "conformityTopic": "governance.compliance",
+                        "status": "active"
+                      },
+                      {
+                        "type": [
+                          "Criterion"
+                        ],
+                        "id": "https://battery-grade-specs/magnetic-impurities",
+                        "name": "Magnetic Impurity Content",
+                        "description": "Maximum allowable magnetic impurity content to ensure battery performance",
+                        "conformityTopic": "governance.compliance",
+                        "status": "active"
+                      }
+                    ],
+                    "declaredValue": [
+                      {
+                        "metricName": "Li2CO3 Purity",
+                        "metricValue": {
+                          "value": 99.5,
+                          "unit": "P1"
+                        },
+                        "accuracy": 0.1
+                      },
+                      {
+                        "metricName": "Total Transition Metal Impurities (Fe+Cu+Ni+Zn)",
+                        "metricValue": {
+                          "value": 22,
+                          "unit": "PPM"
+                        },
+                        "accuracy": 5
+                      },
+                      {
+                        "metricName": "Particle Size D50",
+                        "metricValue": {
+                          "value": 6,
+                          "unit": "C45"
+                        },
+                        "accuracy": 1
+                      },
+                      {
+                        "metricName": "Magnetic Impurities",
+                        "metricValue": {
+                          "value": 15,
+                          "unit": "PPM"
+                        },
+                        "accuracy": 5
+                      }
+                    ],
+                    "conformance": true,
+                    "conformityTopic": "governance.compliance",
+                    "assessmentDate": "2025-10-27",
+                    "conformityEvidence": {
+                      "linkURL": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                      "linkName": "Chemical Assay Report - Batch LBM-CR-20251027-001",
+                      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/verificationEvidence",
+                      "hashDigest": "b9d3f7a1c5e8b2d6f9a3c7e1b5d9f2a6c8e3b7d1f5a9c2e6b8d4f1a7c9e3b5d2",
+                      "hashMethod": "SHA-256",
+                      "encryptionMethod": "none"
+                    }
+                  }
+                ],
+                "traceabilityInformation": [
+                  {
+                    "valueChainProcess": "Precipitation of Lithium Carbonate",
+                    "verifiedRatio": 1,
+                    "traceabilityEvent": [
+                      {
+                        "linkURL": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/09359502000135/21/DTE_01",
+                        "linkName": "Transformation — Precipitation from Lithium Chloride to Lithium Carbonate",
+                        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
+                        "hashDigest": "e8f2a6c9d3b7e1f5a9c2d6b8f1a4e7c3b5d9f2a6c8e1b4d7f9a3c5e2b6d8f1a4",
+                        "hashMethod": "SHA-256",
+                        "encryptionMethod": "none"
+                      }
+                    ]
+                  }
+                ]
+              },
+            		"credentialStatus": {% response 'raw', 'req_0593999603814e56a96ace3a1360dff1', '', 'always', 60 %},
             		"id": "urn:uuid:{% uuid 'v4' %}",
             		"renderMethod":  [
             			{ 
@@ -366,7 +368,7 @@ collection:
         meta:
           id: req_192c746f05e6484fb636682ed21a3630
           created: 1759897101090
-          modified: 1760509979084
+          modified: 1766119848771
           isPrivate: false
           description: ""
           sortKey: -1732073886030
@@ -377,7 +379,7 @@ collection:
             {
             	"resultPath": "/uri",
             	"bucket": "verifiable-credentials",
-            	"data": {% response 'body', 'req_48157faa14b34ea8b2e266e6c3f1ef91', 'b64::JC52ZXJpZmlhYmxlQ3JlZGVudGlhbA==::46b', 'no-history', 60 %}
+            	"data": {% response 'body', 'req_dd5bc13e96844dc3ad131303459a851b', 'b64::JC52ZXJpZmlhYmxlQ3JlZGVudGlhbA==::46b', 'no-history', 60 %}
             }
         headers:
           - name: Content-Type
@@ -397,7 +399,7 @@ collection:
         meta:
           id: req_061c54f2c26446f4ac658ae0e9d7aa41
           created: 1759897101096
-          modified: 1760562950822
+          modified: 1766120545696
           isPrivate: false
           description: ""
           sortKey: -1732073886130
@@ -406,7 +408,7 @@ collection:
           mimeType: application/json
           text: >-
             {
-            	"credential": {% response 'body', 'req_48157faa14b34ea8b2e266e6c3f1ef91', 'b64::JC52ZXJpZmlhYmxlQ3JlZGVudGlhbA==::46b', 'no-history', 60 %},
+            	"credential": {% response 'body', 'req_dd5bc13e96844dc3ad131303459a851b', 'b64::JC52ZXJpZmlhYmxlQ3JlZGVudGlhbA==::46b', 'no-history', 60 %},
             	"fetchRemoteContexts": true,
             	"policies": {
             		"credentialStatus": true
@@ -434,7 +436,7 @@ collection:
         meta:
           id: req_09aba6f8391d40c6945187272d84379b
           created: 1759897101102
-          modified: 1765493865684
+          modified: 1766121583761
           isPrivate: false
           description: ""
           sortKey: -1732073885930
@@ -445,7 +447,7 @@ collection:
             {
             	"namespace": "gs1",
             	"identificationKeyType": "gtin",
-            	"identificationKey": "{% response 'body', 'req_111ac44486e6421285b8b390278f5b51', 'b64::JC5kb2N1bWVudC5jcmVkZW50aWFsU3ViamVjdC5wcm9kdWN0LnJlZ2lzdGVyZWRJZA==::46b', 'no-history', 60 %}",
+            	"identificationKey": "{% response_regex_extract '', 'req_061c54f2c26446f4ac658ae0e9d7aa41', '$.document.credentialSubject.id', 'gs1/01/(.*)' %}",
             	"itemDescription": "DigitalProductPassport",
             	"qualifierPath": "/",
             	"active": true,
@@ -477,7 +479,7 @@ collection:
             			"title": "{{ _.vcType }}",
             			"linkType": "gs1:sustainabilityInfo",
             			"linkTitle": "{{ _.vcType }}",
-            			"targetUrl": "{% response 'body', 'req_db2acc5a462c425f9effab1526f0526f', 'b64::JC51cmk=::46b', 'when-expired', 60 %}",
+            			"targetUrl": "{% response 'body', 'req_192c746f05e6484fb636682ed21a3630', 'b64::JC51cmk=::46b', 'when-expired', 60 %}",
             			"mimeType": "application/json"
             		},
             		{
@@ -492,7 +494,7 @@ collection:
             			"title": "{{ _.vcType }}",
             			"linkType": "gs1:sustainabilityInfo",
             			"linkTitle": "{{ _.vcType }}",
-            			"targetUrl": "{{ _.app_url }}/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22{% response 'body', 'req_db2acc5a462c425f9effab1526f0526f', 'b64::JC51cmk=::46b', 'never', 60 %}%22%7D%7D",
+            			"targetUrl": "{{ _.app_url }}/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22{% response 'body', 'req_192c746f05e6484fb636682ed21a3630', 'b64::JC51cmk=::46b', 'never', 60 %}%22%7D%7D",
             			"mimeType": "text/html"
             		}
             	]
@@ -515,14 +517,14 @@ collection:
             store: true
           rebuildPath: true
       - url: "{{ _.idr_url }}/api/1.0.0/gs1/01/{% response 'body',
-          'req_111ac44486e6421285b8b390278f5b51',
+          'req_061c54f2c26446f4ac658ae0e9d7aa41',
           'b64::JC5kb2N1bWVudC5jcmVkZW50aWFsU3ViamVjdC5wcm9kdWN0LnJlZ2lzdGVyZWR\
           JZA==::46b', 'no-history', 60 %}"
         name: 006 - Validate Resolve Registry
         meta:
           id: req_e3ea87a33b124fd1b6b2370bc816d307
           created: 1759897101117
-          modified: 1760409243890
+          modified: 1766120009543
           isPrivate: false
           description: ""
           sortKey: -1732073885830
@@ -542,13 +544,13 @@ collection:
             store: true
           rebuildPath: true
       - url: "{{ _.app_url }}/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22{% response
-          'body', 'req_db2acc5a462c425f9effab1526f0526f', 'b64::JC51cmk=::46b',
+          'body', 'req_192c746f05e6484fb636682ed21a3630', 'b64::JC51cmk=::46b',
           'never', 60 %}%22%7D%7D"
         name: 004.1 - View Credential
         meta:
           id: req_72c9ef05b20742fa8868c6e37fa17d25
           created: 1760066212822
-          modified: 1760066250440
+          modified: 1766115455215
           isPrivate: false
           description: ""
           sortKey: -1732073885980
@@ -1480,7 +1482,7 @@ collection:
         meta:
           id: req_2ce2e8abefac4c29a2f0b45007713ea6
           created: 1759897101162
-          modified: 1765493852739
+          modified: 1766119928373
           isPrivate: false
           description: ""
           sortKey: -1732073885930
@@ -1568,7 +1570,7 @@ collection:
         meta:
           id: req_e371d0eab76040bf811bfd4e8ebd4a4a
           created: 1759897101166
-          modified: 1760065592207
+          modified: 1766119987559
           isPrivate: false
           description: ""
           sortKey: -1732073885830
@@ -1980,7 +1982,7 @@ collection:
         meta:
           id: req_95cfd441554749a595180c30f7083d31
           created: 1760401726046
-          modified: 1765755407952
+          modified: 1766033950859
           isPrivate: false
           description: ""
           sortKey: -1732073886230
@@ -2003,21 +2005,21 @@ collection:
             			"name": "RBA's \"Synthetic Data\" Decentralized Identifiers (DID)"
             		},
             		"credentialSubject": {
-              "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/8883094828725/21/DCC_01",
+              "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/8882225558885/21/RMAP_DCC_01",
               "type": [
                 "ConformityAttestation",
                 "Attestation"
               ],
-              "name": "Copper Mark CoC for Fairpoint - Copper Cathode (ER) Location C",
+              "name": "RMAP Digital Conformity Credential for Universal - Location FR",
               "assessorLevel": "3rdParty",
               "assessmentLevel": "Accredited",
               "attestationType": "certification",
-              "description": "Copper Mark attests that Fairpoint - Copper Cathode (ER) Location C complies with The Copper Mark Chain of Custody Standard 1.0",
+              "description": "RBA attests that Universal - Location FR complies with the RMAP Standard",
               "issuedToParty": {
-                "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/4823170330005",
-                "name": "Fairpoint - Location C",
-                "registeredId": "4823170330005",
-                "description": "Fairpoint Location C"
+                "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                "name": "Universal Refinery - Location FR",
+                "registeredId": "5558880000030",
+                "description": "Universal Refinery - Location FR"
               },
               "authorisation": [
                 {
@@ -2026,14 +2028,10 @@ collection:
                   ],
                   "id": "https://www.responsiblebusiness.org/",
                   "name": "RBA",
-                  "trustmark": {
-                    "fileName": "RBA Logo",
-                    "fileType": "image/png"
-                  },
                   "issuingAuthority": {
-                    "id": "https://coppermark.org/about/",
-                    "name": "Copper Mark",
-                    "registeredId": "12370476"
+                    "id": "https://www.responsiblebusiness.org/",
+                    "name": "RBA",
+                    "registeredId": "123456789"
                   }
                 }
               ],
@@ -2042,26 +2040,19 @@ collection:
                   "ConformityAssessmentScheme",
                   "Standard"
                 ],
-                "id": "https://coppermark.org/wp-content/uploads/2022/06/The-Copper-Mark_Chain-of-Custody-Standard_FINAL_1Jul2022.pdf",
-                "name": "The Copper Mark Chain of Custody Standard 1.0",
+                "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
                 "issuingParty": {
-                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
-                  "name": "Pilot Audit Corp",
-                  "registeredId": "12370476"
+                  "id": "https://www.responsiblebusiness.org/about/rba/",
+                  "name": "Responsible Business Alliance (RBA)",
+                  "registeredId": "123456789"
                 },
-                "issueDate": "2024-11-19",
+                "issueDate": "2025-12-15",
                 "trustmark": {
-                  "fileName": "The Copper Mark Logo",
-                  "fileType": "image/png"
+                  "fileName": "RBA Logo",
+                  "fileType": "image/png",
+                  "file": ""
                 }
-              },
-              "conformityCertificate": {
-                "linkURL": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
-                "linkName": "Assessment Summary Report"
-              },
-              "auditableEvidence": {
-                "linkName": "Assessment Summary Report",
-                "linkURL": "http://docs.rbtp.pyx.io/docs/pilot-private-data"
               },
               "assessment": [
                 {
@@ -2074,11 +2065,11 @@ collection:
                     "type": [
                       "Standard"
                     ],
-                    "id": "https://coppermark.org/wp-content/uploads/2022/06/The-Copper-Mark_Chain-of-Custody-Standard_FINAL_1Jul2022.pdf",
-                    "name": "The Copper Mark Chain of Custody Standard 1.0",
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
                     "issuingParty": {
-                      "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
-                      "name": "Pilot Audit Corp",
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
                       "registeredId": "12370476"
                     },
                     "issueDate": "2020-01-01"
@@ -2088,79 +2079,14 @@ collection:
                       "type": [
                         "Criterion"
                       ],
-                      "id": "https://coppermark.org/wp-content/uploads/2022/06/The-Copper-Mark_Chain-of-Custody-Standard_FINAL_1Jul2022.pdf#7.1",
-                      "name": "% of copper sourced from Copper Mark-assured mines (mass balance method)",
-                      "conformityTopic": "governance.compliance",
+                      "id": "https://svc.rbtp.pyx.io/criteria/required-minerals-sourcing-information/1/",
+                      "name": "1 - Required Minerals Sourcing Information",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
                       "status": "active",
-                      "subCriterion": [
-                        {
-                          "type": [
-                            "Criterion"
-                          ],
-                          "id": "https://coppermark.org/wp-content/uploads/2022/06/The-Copper-Mark_Chain-of-Custody-Standard_FINAL_1Jul2022.pdf#7.1.1",
-                          "name": "Leadership",
-                          "description": "The site’s senior management shall commit to the effectiveness of the management system by:\n• Understanding the requirements under the Copper Mark criteria. \n• Assuming accountability for its implementation and maintenance and the achievement of intended results.\n• Ensuring its requirements are integrated into the site’s business processes.\n• Allocating resources for building and maintaining internal capacity to implement the management system.\n• Ensuring continual improvement of the management system.",
-                          "conformityTopic": "governance.compliance",
-                          "status": "active",
-                          "subCriterion": []
-                        },
-                        {
-                          "type": [
-                            "Criterion"
-                          ],
-                          "id": "https://coppermark.org/wp-content/uploads/2022/06/The-Copper-Mark_Chain-of-Custody-Standard_FINAL_1Jul2022.pdf#7.1.2",
-                          "name": "Organisational Roles, Responsibilities, and Accountabilities",
-                          "description": "The site shall assign the responsibility and accountability to a member of its senior management with the necessary competence, knowledge, and experience to: \n• Oversee the management system.\n• Make decisions for its implementation.\n• Regularly review the effectiveness and the performance of the management system and take necessary action to address gaps and deficiencies and pursue improvements opportunities.",
-                          "conformityTopic": "governance.compliance",
-                          "status": "active",
-                          "subCriterion": []
-                        },
-                        {
-                          "type": [
-                            "Criterion"
-                          ],
-                          "id": "https://coppermark.org/wp-content/uploads/2022/06/The-Copper-Mark_Chain-of-Custody-Standard_FINAL_1Jul2022.pdf#7.1.3",
-                          "name": "Resources Management",
-                          "description": "The site shall: \n• Determine and provide the resources needed to support the implementation, maintenance, and continual improvement of the management system, considering site size, location, and circumstances. \n• Define the competences needed to manage and implement the management system and ensure that the staff managing and implementing the management system has these competences, on the basis of education, training and/or experience.\n• Provide sufficient training on the management system and process to relevant employees and maintain training records.",
-                          "conformityTopic": "governance.compliance",
-                          "status": "active",
-                          "subCriterion": []
-                        },
-                        {
-                          "type": [
-                            "Criterion"
-                          ],
-                          "id": "https://coppermark.org/wp-content/uploads/2022/06/The-Copper-Mark_Chain-of-Custody-Standard_FINAL_1Jul2022.pdf#7.1.4",
-                          "name": "Perofrmance Evaluation and improvement",
-                          "description": "The site shall evaluate the effectiveness of the management system at pre-determined intervals and determine: \n• The scope of the evaluation. \n• The methodology of the evaluation.\n• The timing of the evaluation.\n• The site shall use the results from the evaluation to plan for continuous improvement of the management system.",
-                          "conformityTopic": "governance.transparency",
-                          "status": "active",
-                          "subCriterion": []
-                        },
-                        {
-                          "type": [
-                            "Criterion"
-                          ],
-                          "id": "https://coppermark.org/wp-content/uploads/2022/06/The-Copper-Mark_Chain-of-Custody-Standard_FINAL_1Jul2022.pdf#7.1.5",
-                          "name": "Process to Adress Complaints, Gaps, Mistakes, Inconsistencies",
-                          "description": "The site shall design and implement a process to identify, investigate and correct complaints, gaps, mistakes, and inconsistencies related to the production, transfer, receipt, or other handling of Copper Mark copper. The process shall include gaps, mistakes or inconsistencies made by the site as well as any complaints, gaps, mistakes, and inconsistencies brought forth by customers or suppliers.This process shall include direction for the site to:\n• Investigate any complaints or concerns about gaps, mistakes or inconsistenciesidentified or received to determine the root-cause.\n• Develop an improvement plan to avoid future gaps, mistakes, or inconsistencieswhen these were caused by the site and assist customers or suppliers in developing an improvement plan when the gaps, mistakes or inconsistencies were caused by the customer or supplier.\n• Determine and implement an appropriate way to address the mistake or inconsistency.\n• Notify the customer / supplier (respectively) and the Copper Mark without delay, to ensure a check of effectiveness of the implemented action.",
-                          "conformityTopic": "governance.compliance",
-                          "status": "active",
-                          "subCriterion": []
-                        }
-                      ],
-                      "description": "The site shall have a CoC management system that is appropriate to the size and complexity of its operations. ",
-                      "performanceLevel": ""
-                    }
-                  ],
-                  "declaredValue": [
-                    {
-                      "metricName": "% of copper sourced from Copper Mark-assured mines (mass balance method)",
-                      "score": "100%",
-                      "metricValue": {
-                        "unit": "percent",
-                        "value": 100
-                      }
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
                     }
                   ],
                   "conformance": true,
@@ -2168,21 +2094,1016 @@ collection:
                   "assessedFacility": [
                     {
                       "facility": {
-                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/4823170330005",
-                        "name": "Fairpoint Location C",
-                        "registeredId": "4823170330005"
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
                       }
                     }
                   ],
-                  "assessmentDate": "2024-07-02",
                   "auditor": {
                     "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
                     "name": "Pilot Audit Corp",
-                    "registeredId": "12370476",
-                    "description": "Independent Auditors approved by coppermark who make the assessments."
-                  }
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/adopt-and-publish-a-supply-chain-policy-for-covered-minerals/1/",
+                      "name": "2.A - Adopt and publish a supply chain policy for covered minerals",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/structure-internal-management-to-support-supply-chain-due-diligence/1/",
+                      "name": "2.B - Structure internal management to support supply chain due diligence",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/establish-a-system-of-controls-and-transparency-over-the-covered-minerals-supply-chain/1/",
+                      "name": "2.C - Establish a system of controls and transparency over the covered minerals supply chain",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/strengthen-company-engagement-with-suppliers/1/",
+                      "name": "2.D - Strengthen company engagement with suppliers",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/establish-company-level-grievance-system/1/",
+                      "name": "2.E - Establish company level grievance system",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/cahra-determination/1/",
+                      "name": "3.A - CAHRA Determination",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/red-flag-review-and-risk-assessment-tailoring/1/",
+                      "name": "3.B - Red Flag Review and Risk Assessment Tailoring",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/mining-operations-cobalt-only-lsm-asm/1/",
+                      "name": "3.C - MINING OPERATIONS COBALT ONLY (LSM & ASM)",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/applicability/1/",
+                      "name": "3.D - Applicability",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/high-risk-sourcing/1/",
+                      "name": "3.E - High Risk Sourcing",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/specific-assessment-of-due-diligence-practices-and-qualitative-conditions/1/",
+                      "name": "3.F - Specific Assessment of Due Diligence Practices and Qualitative Conditions",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/community-participation-cobalt-only/1/",
+                      "name": "3.G - Community Participation - COBALT ONLY",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/upstream-assurance-mechanisms/1/",
+                      "name": "3.H - Upstream Assurance Mechanisms",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/risk-assessment-for-high-risk-sourcing/1/",
+                      "name": "3.I - Risk Assessment for High Risk Sourcing",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/report-findings-to-designated-senior-management/1/",
+                      "name": "4.A - Report findings to designated senior management",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/devise-and-adopt-a-risk-management-plan/1/",
+                      "name": "4.B - Devise and adopt a risk management plan",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/implement-the-risk-management-plan/1/",
+                      "name": "4.C - Implement the risk management plan",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/report/1/",
+                      "name": "5.A - Report",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
+                },
+                {
+                  "type": [
+                    "ConformityAssessment",
+                    "Declaration"
+                  ],
+                  "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                  "referenceStandard": {
+                    "type": [
+                      "Standard"
+                    ],
+                    "id": "https://www.responsiblemineralsinitiative.org/media/docs/standards/ResponsibleMineralsAssuranceProcess_Standard_AllMinerals_EN_09152024.pdf",
+                    "name": "Responsible Minerals Assurance Process - Global Responsible Sourcing Due Diligence for Mineral Supply Chains",
+                    "issuingParty": {
+                      "id": "https://find-and-update.company-information.service.gov.uk/company/12370476",
+                      "name": "TEST RBA",
+                      "registeredId": "12370476"
+                    },
+                    "issueDate": "2020-01-01"
+                  },
+                  "assessmentCriteria": [
+                    {
+                      "type": [
+                        "Criterion"
+                      ],
+                      "id": "https://svc.rbtp.pyx.io/criteria/report-high-risk-questions/1/",
+                      "name": "5.B - Report (High Risk Questions)",
+                      "description": "",
+                      "conformityTopic": "environment.emissions",
+                      "status": "active",
+                      "subCriterion": [],
+                      "performanceLevel": "",
+                      "tags": ""
+                    }
+                  ],
+                  "conformance": true,
+                  "conformityTopic": "governance.compliance",
+                  "assessedFacility": [
+                    {
+                      "facility": {
+                        "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/5558880000030",
+                        "name": "Universal Refinery - Location FR",
+                        "registeredId": "5558880000030"
+                      }
+                    }
+                  ],
+                  "auditor": {
+                    "id": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                    "name": "Pilot Audit Corp",
+                    "description": "Assessment Firm approved by RMI for RMAP and Downstream Assessment Program"
+                  },
+                  "assessmentDate": "2024-10-17"
                 }
-              ]
+              ],
+              "conformityCertificate": {
+                "linkURL": "http://docs.rbtp.pyx.io/docs/pilot-private-data",
+                "linkName": "Assessment Summary Report"
+              },
+              "auditableEvidence": {
+                "linkName": "Assessment Summary Report",
+                "linkURL": "http://docs.rbtp.pyx.io/docs/pilot-private-data"
+              }
             }
 
             ,
@@ -2221,7 +3142,7 @@ collection:
         meta:
           id: req_d2710fd14ea940e08cbe1b3c65e951fa
           created: 1760401726055
-          modified: 1765430882408
+          modified: 1766115433353
           isPrivate: false
           description: ""
           sortKey: -1732073886030
@@ -2252,7 +3173,7 @@ collection:
         meta:
           id: req_54bec65315184ac897d9ddaa0a24b4c3
           created: 1760401726062
-          modified: 1765517314797
+          modified: 1766115420069
           isPrivate: false
           description: ""
           sortKey: -1732073886130
@@ -2289,7 +3210,7 @@ collection:
         meta:
           id: req_b467317615c44fdfa59eab4b138b60a2
           created: 1760401726077
-          modified: 1765494791308
+          modified: 1766120623837
           isPrivate: false
           description: ""
           sortKey: -1732073885930
@@ -2403,7 +3324,7 @@ collection:
         meta:
           id: req_a1e0f950d8844e52bcbbb125b21b6612
           created: 1760401726115
-          modified: 1765491691226
+          modified: 1766115448786
           isPrivate: false
           description: ""
           sortKey: -1732073885980
@@ -2470,7 +3391,7 @@ collection:
         meta:
           id: req_0991650170784bd3b44febc0877a3ec4
           created: 1760408540540
-          modified: 1765925150256
+          modified: 1766114937198
           isPrivate: false
           description: ""
           sortKey: -1732073886230
@@ -2498,21 +3419,21 @@ collection:
                     "TransformationEvent",
                     "Event"
                   ],
-                  "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/09359502000135/21/DTE_01",
-                  "processType": "Precipitation",
+                  "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/09359502000142/21/DTE_01",
+                  "processType": "Smelting",
                   "eventTime": "2024-11-12T12:00:00",
                   "action": "add",
                   "disposition": "https://ref.gs1.org/cbv/Disp-active",
                   "bizStep": "https://ref.gs1.org/cbv/BizStep-commissioning",
-                  "bizLocation": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/4569870000016",
+                  "bizLocation": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/414/9797971000006?linkType=gs1:locationInfo",
                   "sensorElementList": [],
                   "outputEPCList": [
                     {
                       "type": [
                         "Item"
                       ],
-                      "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/14569870000031/21/DPP_01?linkType=gs1:sustainabilityInfo",
-                      "name": "Lithium Carbonate - LBM - CR"
+                      "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/86753090000015/21/DPP_01?linkType=gs1:sustainabilityInfo",
+                      "name": "Tantalum Powder - Zola - Location R"
                     }
                   ],
                   "inputEPCList": [
@@ -2520,8 +3441,8 @@ collection:
                       "type": [
                         "Item"
                       ],
-                      "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/14569870000017/21/DPP_01?linkType=gs1:sustainabilityInfo",
-                      "name": "Lithium Chloride - LBM - CM"
+                      "id": "https://idr.rbtp.pyx.io/api/1.0.0/gs1/01/86753090000012/21/DPP_01/21/DPP_01?linkType=gs1:sustainabilityInfo",
+                      "name": "Tantalum Concentrate - Tantalum - Location R"
                     }
                   ],
                   "inputQuantityList": [],
@@ -2631,7 +3552,7 @@ collection:
         meta:
           id: req_f82b27f6cb9b4a7ea7f597f9c3a31444
           created: 1760408540561
-          modified: 1765925190890
+          modified: 1766119144274
           isPrivate: false
           description: ""
           sortKey: -1732073885930
@@ -3549,7 +4470,7 @@ environments:
       meta:
         id: env_be17c97dfdd94768984b22221cc18815
         created: 1764213890090
-        modified: 1765757811054
+        modified: 1766030130393
         isPrivate: false
         sortKey: 1741692952442
       data:
@@ -3564,7 +4485,7 @@ environments:
         gs1_url: https://mock-gs1-idr{{ _.base }}
         gs1_token: 9BIHy2LZIRyqtNocCGBf
         app_url: https://www{{ _.base }}
-        dccvcTemplate: "{% raw %}<!DOCTYPE html><html lang=\\\"en\\\"><head> <meta
+        dccVCTemplate: "{% raw %}<!DOCTYPE html><html lang=\\\"en\\\"><head> <meta
           charset=\\\"UTF-8\\\" /> <meta name=\\\"viewport\\\"
           content=\\\"width=device-width, initial-scale=1.0\\\" />
           <title>Digital Conformity Credential</title> <link
@@ -5668,7 +6589,7 @@ environments:
       meta:
         id: env_5852824e00134a07b675776108e74624
         created: 1764214221635
-        modified: 1765757817366
+        modified: 1766030128335
         isPrivate: false
         sortKey: 1742061607433
       data:
@@ -5683,7 +6604,7 @@ environments:
         gs1_url: https://mock-gs1-idr{{ _.base }}
         gs1_token: 9BIHy2LZIRyqtNocCGBf
         app_url: https://www{{ _.base }}
-        dccvcTemplate: "{% raw %}<!DOCTYPE html><html lang=\\\"en\\\"><head> <meta
+        dccVCTemplate: "{% raw %}<!DOCTYPE html><html lang=\\\"en\\\"><head> <meta
           charset=\\\"UTF-8\\\" /> <meta name=\\\"viewport\\\"
           content=\\\"width=device-width, initial-scale=1.0\\\" />
           <title>Digital Conformity Credential</title> <link
@@ -7787,7 +8708,7 @@ environments:
       meta:
         id: env_d5adccaf53a54c4fb9c587c688dc103e
         created: 1764214241297
-        modified: 1765757823317
+        modified: 1766030118469
         isPrivate: false
         sortKey: 1742245934928.5
       data:
@@ -7802,7 +8723,7 @@ environments:
         gs1_url: https://mock-gs1-idr{{ _.base }}
         gs1_token: 9BIHy2LZIRyqtNocCGBf
         app_url: https://www{{ _.base }}
-        dccvcTemplate: "{% raw %}<!DOCTYPE html><html lang=\\\"en\\\"><head> <meta
+        dccVCTemplate: "{% raw %}<!DOCTYPE html><html lang=\\\"en\\\"><head> <meta
           charset=\\\"UTF-8\\\" /> <meta name=\\\"viewport\\\"
           content=\\\"width=device-width, initial-scale=1.0\\\" />
           <title>Digital Conformity Credential</title> <link
@@ -9903,7 +10824,7 @@ environments:
       meta:
         id: env_f6c764f63fee469ea0fd2f7e1ae99302
         created: 1764903250103
-        modified: 1765757863570
+        modified: 1766030135515
         isPrivate: false
         sortKey: 1742245934929.5
       data:
@@ -9918,7 +10839,7 @@ environments:
         gs1_url: https://mock-gs1-idr{{ _.base }}
         gs1_token: rWWLL3vKzeyywkL7WAf9
         app_url: https://www{{ _.base }}
-        dccvcTemplate: "{% raw %}<!DOCTYPE html><html lang=\\\"en\\\"><head> <meta
+        dccVCTemplate: "{% raw %}<!DOCTYPE html><html lang=\\\"en\\\"><head> <meta
           charset=\\\"UTF-8\\\" /> <meta name=\\\"viewport\\\"
           content=\\\"width=device-width, initial-scale=1.0\\\" />
           <title>Digital Conformity Credential</title> <link
@@ -14126,3 +15047,26 @@ environments:
           until</div> <div class=\\\"grid-value\\\"> <div
           class=\\\"grid-value-text-alt\\\">{{validUntil}}</div> </div> </div>
           {{/if}} </div> </section> </div> </body></html>{% endraw %}"
+    - name: environment-template
+      meta:
+        id: env_dcddae599d0048a9a5b3a5e8c73046fe
+        created: 1766356407812
+        modified: 1766356565643
+        isPrivate: false
+        sortKey: 1734285843701.75
+      data:
+        base: .<PYX-ENV_CLIENT_NAME found in .env lastpass>.pyx.io
+        did: vckit{{ _.base }}
+        api_url: https://vckit{{ _.base }}
+        api_token: <VCKIT_API_KEY found in.env lastpass>
+        storage_url: https://vcs{{ _.base }}
+        storage_token: test123
+        idr_url: https://idr{{ _.base }}
+        idr_token: <IDR_API_KEY found in .env lastpass>
+        gs1_url: https://mock-gs1-idr{{ _.base }}
+        gs1_token: <GS1_API_KEY> found in .env lastpass
+        app_url: https://www{{ _.base }}
+        dccVCTemplate: ""
+        dppVCTemplate: ""
+        dteVCTemplate: ""
+        dfrVCTemplate: ""
