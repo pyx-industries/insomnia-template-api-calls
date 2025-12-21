@@ -21,8 +21,15 @@ Follow the steps below to clone the repository in Insomnia:
 8. After completing your updates, commit and push the changes to your development branch in the remote repository.
 9. Once you’re satisfied with the committed changes, raise a pull request and assign a reviewer for peer review, then request a merge into the master branch.
 
+## Creating global environments from template
+1. Make a copy of the blank environment-template and rename it to match your environment (e.g. rbtp.pyx.io).
+![duplicate env](duplicate-env.png)
+2. Update the tokens using the values provided in the .env file stored in LastPass.
+3. To obtain the environment tokens, request BizCubed to share them securely via LastPass.
+*(For BizCubed users, refer to the “Communicating Passwords to Clients” wiki for guidance on securely sharing LastPass items.)*
+
 ## Issuing credentials
-1. Select the environment accordingly at the top left corner based on the render templates.
+1. Select the environment accordingly at the top left corner.
 2. Then, depending on credential you want to issue, choose the corresponding folder (DPP/DFR/DCC/DTE).
 3. Click on the 002 - Issue Credential HTTP request and replace the value of “credentialSubject” with the JSON Instance that you have prepared.
 4. Issue the Insomnia calls:
